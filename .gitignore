@@ -1,0 +1,17 @@
+# Package File #
+*.war
+*.zip
+*.nar
+
+# Serenity-BDD #
+/target/
+
+# Intellij #
+/.idea/
+
+# SonarLint #
+/.sonar/
+
+# VisualStudioCode #
+.vscode/
+/.gradle/
