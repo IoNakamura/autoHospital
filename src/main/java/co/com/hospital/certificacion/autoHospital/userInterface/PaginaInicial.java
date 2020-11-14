@@ -8,4 +8,7 @@ public class PaginaInicial extends PageObject {
 
     public static final Target BTN_AGREGAR_DOCTOR =
         Target.the("Seleccionar agregar doctor").located(By.xpath("//*[@id=\"page-wrapper\"]/div/div[2]/div/div/div/div/div[1]/div/a[1]"));
+
+    public static final Target BTN_AGREGAR_PACIENTE =
+        Target.the("Seleccionar agregar paciente").located(By.xpath("//*[@id=\"page-wrapper\"]/div/div[2]/div/div/div/div/div[1]/div/a[2]"));
 }

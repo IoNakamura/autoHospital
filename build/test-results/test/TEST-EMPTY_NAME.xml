@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EMPTY_NAME" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-28T16:20:43" hostname="HDIPF0V15SZ" time="18.767">
+<testsuite name="EMPTY_NAME" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-09T15:57:05" hostname="HDIPF0V15SZ" time="30.661">
   <properties/>
-  <testcase name="Registrar un doctor en el sistema de administracion del hospital" classname="EMPTY_NAME" time="18.767"/>
+  <testcase name="Registrar un paciente en el sistema de administracion del hospital" classname="EMPTY_NAME" time="30.661">
+    <failure message="java.lang.AssertionError: Expected net.serenitybdd.screenplay.QuestionSubject@d6d8936&#10;Expected: is &lt;true&gt;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Expected net.serenitybdd.screenplay.QuestionSubject@d6d8936
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at co.com.hospital.certificacion.autoHospital.stepDefinitions.RegistroDoctorStepDefinition.elVeraElMensajeDatosGuardadosCorrectamente(RegistroDoctorStepDefinition.java:42)
+	at ✽.el vera el mensaje Datos guardados correctamente.(src/test/resources/features/registro_paciente.feature:12)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[oct 28, 2020 11:20:44 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[nov 09, 2020 10:57:05 AM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 32406
+Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 24540
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-oct 28, 2020 11:20:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+nov 09, 2020 10:57:12 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[Test worker] INFO net.serenitybdd.core.Serenity - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Registrar un doctor en el sistema de administracion del hospital
-----------------------------------------------------------------------------
+TEST FAILED: Registrar un paciente en el sistema de administracion del hospital
+--------------------------------------------------------------------------
+[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Then verificar registro
+[Test worker] ERROR net.serenitybdd.core.Serenity - Expected net.serenitybdd.screenplay.QuestionSubject@d6d8936Expected: is <true> but: was <false>
 ]]></system-err>
 </testsuite>

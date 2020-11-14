@@ -1,13 +1,11 @@
 package co.com.hospital.certificacion.autoHospital.tasks;
 
 import co.com.hospital.certificacion.autoHospital.model.DatosDoctor;
-import co.com.hospital.certificacion.autoHospital.userInterface.AgregarDoctor;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actors.OnStage;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static co.com.hospital.certificacion.autoHospital.userInterface.AgregarDoctor.*;

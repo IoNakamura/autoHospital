@@ -27,4 +27,5 @@ public class AgregarDoctor extends PageObject {
     public static final Target BTN_GUARDAR =
         Target.the("Boton guardar datos").located(By.xpath("//*[@id=\"page-wrapper\"]/div/div[3]/div/a"));
 
+
 }

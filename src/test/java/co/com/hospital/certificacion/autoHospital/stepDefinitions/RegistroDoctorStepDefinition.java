@@ -2,7 +2,6 @@ package co.com.hospital.certificacion.autoHospital.stepDefinitions;
 
 import co.com.hospital.certificacion.autoHospital.model.DatosDoctor;
 import co.com.hospital.certificacion.autoHospital.questions.VerificarRegistro;
-import co.com.hospital.certificacion.autoHospital.runners.RegistroDoctor;
 import co.com.hospital.certificacion.autoHospital.tasks.AbrirPagina;
 import co.com.hospital.certificacion.autoHospital.tasks.RegistrarDoctor;
 import co.com.hospital.certificacion.autoHospital.tasks.SeleccionarAgregarDoctor;
@@ -10,7 +9,6 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 

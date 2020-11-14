@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class co.com.hospital.certificacion.autoHospital.runners.RegistroDoctor</title>
+<title>Test results - Class co.com.hospital.certificacion.autoHospital.runners.RegistroPaciente</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class co.com.hospital.certificacion.autoHospital.runners.RegistroDoctor</h1>
+<h1>Class co.com.hospital.certificacion.autoHospital.runners.RegistroPaciente</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/co.com.hospital.certificacion.autoHospital.runners.html">co.com.hospital.certificacion.autoHospital.runners</a> &gt; RegistroDoctor</div>
+<a href="../packages/co.com.hospital.certificacion.autoHospital.runners.html">co.com.hospital.certificacion.autoHospital.runners</a> &gt; RegistroPaciente</div>
 <div id="summary">
 <table>
 <tr>
@@ -86,9 +86,21 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m19,245s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/registro_paciente.feature:15 ?[0m# Registrar un paciente en el sistema de administracion del hospital
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+0m31,419s
+
+java.lang.AssertionError: Expected net.serenitybdd.screenplay.QuestionSubject@d6d8936
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:187)
+	at co.com.hospital.certificacion.autoHospital.stepDefinitions.RegistroDoctorStepDefinition.elVeraElMensajeDatosGuardadosCorrectamente(RegistroDoctorStepDefinition.java:42)
+	at ?.el vera el mensaje Datos guardados correctamente.(src/test/resources/features/registro_paciente.feature:12)
 
 </pre>
 </span>
@@ -113,7 +125,7 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 ?[0m
-[Test worker] INFO net.serenitybdd.core.Serenity - Test Suite Started: Registro doctor
+[Test worker] INFO net.serenitybdd.core.Serenity - Test Suite Started: Registro paciente
 [Test worker] INFO net.serenitybdd.core.Serenity - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
@@ -122,18 +134,20 @@
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Registrar un doctor en el sistema de administracion del hospital
--------------------------------------------------------------------(registro-doctor;registrar-un-doctor-en-el-sistema-de-administracion-del-hospital)
-[Test worker] INFO net.serenitybdd.core.Serenity - 
-        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
-  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
- (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
-  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
- (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
-        /_/                                                                
+TEST STARTED: Registrar un paciente en el sistema de administracion del hospital
+-------------------------------------------------------------------(registro-paciente;registrar-un-paciente-en-el-sistema-de-administracion-del-hospital)
+[Test worker] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
-TEST PASSED: Registrar un doctor en el sistema de administracion del hospital
-----------------------------------------------------------------------------
+TEST FAILED: Registrar un paciente en el sistema de administracion del hospital
+--------------------------------------------------------------------------
+[Test worker] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Then verificar registro
+[Test worker] ERROR net.serenitybdd.core.Serenity - Expected net.serenitybdd.screenplay.QuestionSubject@d6d8936Expected: is &lt;true&gt; but: was &lt;false&gt;
 </pre>
 </span>
 </div>
@@ -145,7 +159,7 @@ TEST PASSED: Registrar un doctor en el sistema de administracion del hospital
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 28/10/2020 11:21:03 AM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 9/11/2020 10:57:36 AM</p>
 </div>
 </div>
 </body>
