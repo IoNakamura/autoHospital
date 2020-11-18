@@ -13,7 +13,7 @@ public class AgregarDoctor extends PageObject {
         Target.the("Ingrese el apellido").located(By.id("last_name"));
 
     public static final Target TXT_TELEFONO =
-        Target.the("Ingrese el teelefono").located(By.id("telephone"));
+        Target.the("Ingrese el telefono").located(By.id("telephone"));
 
     public static final Target CB_TIPO_IDENTIFICACION =
         Target.the("Combo box tipo de Cedula de cuidadania").located(By.id("identification_type"));
